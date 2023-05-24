@@ -1,0 +1,367 @@
+html {
+    background-color: #293544;
+    color: #EAEAEA;
+}
+
+.main-font{
+    font-family: "Fraunces";
+}
+
+.sec-font {
+    font-family: "DM Sans";
+}
+
+a {
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+
+header nav{
+    /* header */
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    
+        position: absolute;
+        width: 1168px;
+        height: 41px;
+        left: 56px;
+        top: 56px;
+        background-color: #293544
+}
+
+header nav h1{
+    /* Auto layout */
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+    
+        width: 152px;
+        height: 40px;
+    
+        border-radius: 5px;
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 55px;
+    width: 415px;
+    height: 41px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding-bottom: 0.45em;
+}
+
+header nav li {
+    list-style-type: none;
+    margin-right: 1em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+
+    width: 95px;
+    height: 41px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    border-radius: 5px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+
+main #about-section{
+    display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 191px;
+        isolation: isolate;
+    
+        position: absolute;
+        width: 557px;
+        height: 209px;
+        left: 92px;
+        top: 138px;
+}
+
+#about-section div {
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+    
+        width: 557px;
+        height: 209px;
+    
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+}
+
+#about-section article {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+    
+        width: 557px;
+        height: 126px;
+    
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+#about-section h3{
+    width: 30px;
+        height: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+#about-section p{
+    width: 557px;
+        height: 84px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+}
+
+#about-section img {
+    position: absolute;
+        width: 477.5px;
+        height: 507.5px;
+        left: 748px;
+        top: 0px;
+    
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        z-index: 1;
+}
+
+#resume-button{
+    display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 14px;
+        gap: 10px;
+    
+        width: 137px;
+        height: 48px;
+    
+        /* leyli/black */
+    
+        border: 3px solid #222222;
+        border-radius: 4px;
+        background-color: #293544;
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+}
+
+
+#projects-section{
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 140px;
+
+    position: absolute;
+    width: 1330px;
+    height: 2748px;
+    left: 56px;
+    top: 500px;
+
+}
+
+#projects-section h1{
+    width: 158px;
+        height: 52px;
+    
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 52px;
+        /* identical to box height */
+    
+    
+        /* leyli/white */
+    
+        color: #EAEAEA;
+    
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+#projects-container{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 0px 0px 50px;
+        gap: 92px;
+    
+        width: 1330px;
+        height: 1341px;
+    
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+}
+
+#ux-design{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+    
+        width: 1280px;
+        height: 387px;
+    
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+#ux-design h2{
+    width: 359px;
+        height: 39px;
+    
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+    
+        /* leyli/white */
+    
+        color: #EAEAEA;
+    
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+/* mobile styles */
+@media only screen and (min-width: 0) and (max-width: 40em) {
+    header {
+        padding-bottom: 0.25em;
+    }
+
+    nav ul {
+        padding-left: 1em;
+    }
+
+    header h1 {
+        padding-top: 0.5em;
+    }
+
+}
+
+/* desktop styles */
+@media only screen and (min-width: 40.001em) {
+    button {
+        display: none;
+        visibility: hidden;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section {
+        flex-basis: 70%;
+        padding-right: 0.5em;
+    }
+
+    main aside {
+        flex-basis: 30%;
+        padding-left: 0.5em;
+    }
+}
