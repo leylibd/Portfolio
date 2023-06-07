@@ -11,28 +11,44 @@ html {
     font-family: "DM Sans";
 }
 
+h1 {
+    font-family: "DM Sans";
+    font-weight: 600;
+    font-size: 42px;
+}
+
+h2 {
+    font-family: 'Fraunces';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: 400;
+    font-family: "DM Sans";
+    font-size: 24px;
+}
+
 header {
     position: fixed;
     width: 100%;
     z-index: 999;
 }
 
-header nav {
+
+
+#name-header {
     /* header */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-
+    margin: 24px;
     position: absolute;
-    width: 1168px;
-    height: 41px;
-    left: 56px;
-    top: 56px;
-    background-color: #293544
+    
+    background-color: #292222
+}
+
+#work-experience {
+    position: absolute;
+    margin: 24px;
+    padding-top: 6em;
 }
 
 .position-name{
@@ -42,6 +58,8 @@ header nav {
     line-height: 30px;
     left: 56px;
 }
+
+
 
 
 /* mobile styles */
