@@ -3,6 +3,23 @@ html {
     color: #EAEAEA;
 }
 
+h1{
+    font-weight: 400;
+    font-size: 42px;
+
+}
+
+h2{
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
 .main-font{
     font-family: "Fraunces";
 }
@@ -11,9 +28,20 @@ html {
     font-family: "DM Sans";
 }
 
+
 a {
     text-decoration: none;
     color: #EAEAEA;
+}
+
+.card-header {
+    color: #293544;
+    order: 0;
+}
+
+.card-tags{
+    color: #293544;
+    order: 2;
 }
 
 header{
@@ -31,23 +59,22 @@ header nav{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0px;
+        padding: 10px;
     
         position: absolute;
         width: 1168px;
         height: 41px;
         left: 56px;
         top: 56px;
-        background-color: #293544
+        background-color: #293222
 }
 
-header nav h1{
+header nav h6{
     /* Auto layout */
     
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 10px;
         gap: 10px;
     
         width: 152px;
@@ -68,7 +95,6 @@ header nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 55px;
     width: 415px;
     height: 41px;
@@ -76,7 +102,7 @@ header nav ul {
     flex: none;
     order: 1;
     flex-grow: 0;
-    padding-bottom: 0.45em;
+    
 }
 
 header nav li {
@@ -86,7 +112,6 @@ header nav li {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px;
     gap: 10px;
 
     width: 95px;
@@ -241,26 +266,26 @@ display: flex;
 
 #projects-section h1{
     width: 158px;
-        height: 52px;
-    
-        font-family: 'Fraunces';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 42px;
-        line-height: 52px;
-        /* identical to box height */
-    
-    
-        /* leyli/white */
-    
-        color: #EAEAEA;
-    
-    
-        /* Inside auto layout */
-    
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+    height: 52px;
+
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    /* identical to box height */
+
+
+    /* leyli/white */
+
+    color: #EAEAEA;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 #projects-container{
@@ -319,6 +344,31 @@ display: flex;
         flex: none;
         order: 0;
         flex-grow: 0;
+}
+
+
+.design-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 256px;
+    height: 296px;
+    background: #EAEAEA;
+    border: 4px solid #222222;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: -18px 16px 0px 0px rgba(34, 34, 2, 1);
+
+}
+
+.design-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    order: 1;
 }
 
 /* mobile styles */

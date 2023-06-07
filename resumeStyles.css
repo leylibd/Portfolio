@@ -1,0 +1,90 @@
+html {
+    background-color: #293544;
+    color: #EAEAEA;
+}
+
+.main-font {
+    font-family: "Fraunces";
+}
+
+.sec-font {
+    font-family: "DM Sans";
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header nav {
+    /* header */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 1168px;
+    height: 41px;
+    left: 56px;
+    top: 56px;
+    background-color: #293544
+}
+
+.position-name{
+    font-family: "Fraunces";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    left: 56px;
+}
+
+
+/* mobile styles */
+@media only screen and (min-width: 0) and (max-width: 40em) {
+    header {
+        padding-bottom: 0.25em;
+    }
+
+    nav ul {
+        padding-left: 1em;
+    }
+
+    header h1 {
+        padding-top: 0.5em;
+    }
+
+}
+
+/* desktop styles */
+@media only screen and (min-width: 40.001em) {
+    button {
+        display: none;
+        visibility: hidden;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section {
+        flex-basis: 70%;
+        padding-right: 0.5em;
+    }
+
+    main aside {
+        flex-basis: 30%;
+        padding-left: 0.5em;
+    }
+}
