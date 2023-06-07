@@ -1,0 +1,122 @@
+html {
+    background-color: #293544;
+    color: #EAEAEA;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-weight: 400;
+    font-size: 42px;
+}
+
+h2 {
+    font-family: 'Fraunces';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: 'Fraunces';
+    font-weight: 400;
+    font-family: "DM Sans";
+    font-size: 24px;
+}
+
+
+.main-font {
+    font-family: "Fraunces";
+}
+
+.sec-font {
+    font-family: "DM Sans";
+}
+
+
+a {
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+p {
+    font-family: "DM Sans";
+}
+
+.info{
+    font-family: "DM Sans";
+}
+
+.about h1{
+    margin-bottom: 24px;
+}
+
+.info ul{
+    margin-bottom: 12px;
+}
+
+
+#img1{
+    margin-right: 56px;
+    margin-top: 56px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+
+
+
+footer {
+    font-family: 'Fraunces';
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed rgb(11, 24, 58);
+}
+
+
+
+/* mobile styles */
+@media only screen and (min-width: 0) and (max-width: 40em) {
+    header {
+        padding-bottom: 0.25em;
+    }
+
+    nav ul {
+        padding-left: 1em;
+    }
+
+    header h1 {
+        padding-top: 0.5em;
+    }
+
+}
+
+/* desktop styles */
+@media only screen and (min-width: 40.001em) {
+    button {
+        display: none;
+        visibility: hidden;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section {
+        /*flex-basis: 70%;*/
+        padding-right: 0.5em;
+    }
+
+    main aside {
+        flex-basis: 30%;
+        padding-left: 0.5em;
+    }
+}
