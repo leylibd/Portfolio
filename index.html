@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Leyli's Portfolio</title>
     <link href="reset.css" rel="stylesheet" />
+    <link href="generalStyles.css" rel="stylesheet" />
     <link href="portfolioStyles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,20 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-TiOu3u2OSbE2gMvNk/sv3zsSZg08v+6hTXFmSP0enDy+zR6GCV0+kB+hwywHqvt6eA6AGdY0pYv7v1dwhmrg/Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <header>
       <nav>
         <h6 class="main-font"><a href="leyli">Leyli Bunyadzade</a></h6>
         <ul class="sec-font">
-          <li><a href="#about-section"> about me </a></li>
+          <li><a href="#hello-section"> hello </a></li>
           <li><a href="#projects-section"> projects </a></li>
           <li><a href="#skills-container"> skills </a></li>
           <li><a href="#contact"> contact </a></li>
@@ -32,7 +26,7 @@
         <div class="icons">
           <a
             class="icon instagram"
-            href="https://instagram.com/leylis.art/"
+            href="https://www.instagram.com/leyli.jpeg/"
           ></a>
           <a
             class="icon linkedin"
@@ -42,7 +36,7 @@
       </nav>
     </header>
     <main>
-      <section id="about-section" class="activeSection">
+      <section id="hello-section" class="activeSection">
         <div>
           <h3 class="main-font">hi!</h3>
           <article>
@@ -66,13 +60,13 @@
           <div id="ux-design-section">
             <h2 class="main-font">Interaction & UX design</h2>
             <div class="cards-row">
-              <div class="design-card">
+              <div class="design-card-big">
                 <h3 class="card-header">Interactive cubes</h3>
                 <img src="cubes.png" alt="cubes cover" />
                 <p class="sec-font card-tags">research, interaction design</p>
               </div>
 
-              <div class="design-card">
+              <div class="design-card-big">
                 <h3 class="card-header">Needy Microwave</h3>
                 <img src="microwave .png" alt="cubes cover" />
                 <p class="sec-font card-tags">
@@ -80,7 +74,21 @@
                 </p>
               </div>
 
-              <div class="design-card">
+              <div class="design-card-big">
+                <h3 class="card-header">AI and Creativity</h3>
+                <img src="microwave .png" alt="cubes cover" />
+                <p class="sec-font card-tags">
+                  wip, research, conference paper
+                </p>
+              </div>
+
+              <div class="design-card-big">
+                <h3 class="card-header">Amazing Finds Jar</h3>
+                <img src="microwave .png" alt="cubes cover" />
+                <p class="sec-font card-tags">wip, research, prototype</p>
+              </div>
+
+              <div class="design-card-big">
                 <h3 class="card-header">Needy Microwave</h3>
                 <img src="microwave .png" alt="cubes cover" />
                 <p class="sec-font card-tags">
@@ -88,23 +96,7 @@
                 </p>
               </div>
 
-              <div class="design-card">
-                <h3 class="card-header">Needy Microwave</h3>
-                <img src="microwave .png" alt="cubes cover" />
-                <p class="sec-font card-tags">
-                  interaction design, prototyping
-                </p>
-              </div>
-
-              <div class="design-card">
-                <h3 class="card-header">Needy Microwave</h3>
-                <img src="microwave .png" alt="cubes cover" />
-                <p class="sec-font card-tags">
-                  interaction design, prototyping
-                </p>
-              </div>
-
-              <div class="design-card">
+              <div class="design-card-big">
                 <h3 class="card-header">Needy Microwave</h3>
                 <img src="cubes.png" alt="cubes cover" />
                 <p class="card-tags">research, interaction design</p>
@@ -169,6 +161,20 @@
             <li class="skill">adobe photoshop</li>
           </ul>
         </section>
+      </section>
+      <section class="about-me">
+        <h1>about me</h1>
+        <p>
+          Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt
+          wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu
+          nutzen, ist, dass es mehr oder weniger die normale Anordnung von
+          Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele
+          Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als
+          den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht
+          viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile
+          gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere
+          bewusst (beeinflusst von Witz und des eigenen Geschmacks)
+        </p>
       </section>
     </main>
     <footer>

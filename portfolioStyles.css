@@ -1,173 +1,6 @@
-html {
-    background-color: #293544;
-    color: #EAEAEA;
-    scroll-behavior: smooth;
-}
-
-h1{
-    font-family: 'Fraunces';
-    font-weight: 400;
-    font-size: 42px;
-}
-
-h2{
-    font-family: 'Fraunces';
-    font-weight: 400;
-    font-size: 32px;
-}
-
-h3{
-    font-family: 'Fraunces';
-    font-weight: 400;
-    font-family: "DM Sans";
-    font-size: 24px;
-}
-
-
-.main-font{
-    font-family: "Fraunces";
-}
-
-.sec-font {
-    font-family: "DM Sans";
-}
-
-
-a {
-    color: #EAEAEA;
-    text-decoration: none;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    background-color: #293544;
-}
-
-
-header nav {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-right: 56px;
-    margin-top: 24px;
-    margin-left: 56px;
-
-    width: inherit;
-    height: inherit;
-    left: 56px;
-    top: 0px;
-    right: 56px;
-    
-}
-
-header nav h6 {
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-
-    width: 152px;
-
-
-    border-radius: 5px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 55px;
-    width: 415px;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
-}
-
-header nav li {
-    list-style-type: none;
-    margin-right: 1em;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-
-    width: 95px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-
-    border-radius: 5px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-}
-
-.icons {
-    display: flex;
-    order: 2;
-    gap: 2rem;
-}
-
-nav a:hover{
-    text-decoration: underline;
-}
-
-nav a.activeSection{
-    text-decoration: underline;
-    font-weight: 600;
-}
-
-
-
-.icon{
-    width: 1.5rem;
-    height: 1.5rem;
-    background-repeat: none;
-}
-
-.icon:hover {
-    text-decoration: underline;
-}
-
-.icon.instagram {
-    background-image: url(icons/ig.svg);
-    background-repeat: none;
-    background-size: contain;
-}
-
-.icon.linkedin {
-    background-image: url(icons/linkedin.svg);
-    background-repeat: none;
-    background-size: contain;
-}
-
-
 button{
     color: #EAEAEA;
 }
-
 
 
 .card-header {
@@ -185,7 +18,7 @@ button{
 
 
 
-#about-section{
+#hello-section{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -193,14 +26,13 @@ button{
     gap: 191px;
     isolation: isolate;
 
-    position: absolute;
     width: 557px;
     height: 209px;
     left: 92px;
     margin-top: 12em;
 }
 
-#about-section div {
+#hello-section div {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -220,7 +52,7 @@ button{
     z-index: 0;
 }
 
-#about-section article {
+#hello-section article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -238,7 +70,7 @@ button{
     flex-grow: 0;
 }
 
-#about-section h3{
+#hello-section h3{
     width: 30px;
     height: 30px;
     font-style: normal;
@@ -250,7 +82,7 @@ button{
     flex-grow: 0;
 }
 
-#about-section p{
+#hello-section p{
     width: 557px;
     height: 84px;
     font-style: normal;
@@ -263,8 +95,8 @@ button{
     flex-grow: 0;
 }
 
-#about-section img {
-    position: absolute;
+#hello-section img {
+    /*position: absolute;*/
     width: 477.5px;
     height: 507.5px;
     left: 748px;
@@ -304,10 +136,8 @@ button{
 }
 
 
-#projects-section{
-    position: absolute;
-    
-    left: 56px;
+#projects-section{ 
+
     margin-top: 30em;
 
 }
@@ -385,7 +215,24 @@ button{
     padding: 16px;
     box-shadow: -18px 16px 0px 0px #222222;
     margin-right: 4rem;
+}
 
+.design-card-big {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: flex-start;
+    gap: 0.4rem;
+    /*flex-basis: 10rem;*/
+    height: 16em;
+    width: 24em;
+    background: #EAEAEA;
+    border: 4px solid #222222;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: -18px 16px 0px 0px #222222;
+    margin-right: 4rem;
 }
 
 .design-card img{
@@ -398,8 +245,17 @@ button{
     margin-top: 5px;
 }
 
+.design-card-big img {
+    width: 24em;
+    height: 12em;
+    border-radius: 5px;
+    order: 1;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
 #skills-container{
-    position: absolute;
     top: 1200px;
     margin-left: 56px;
 }
@@ -426,7 +282,7 @@ button{
 
 .skill{
     font-family: "DM Sans";
-    padding: 12px;
+    padding: 10px;
     /* leyli/green */
     background: #2C4936;
     /* leyli/black */
@@ -437,63 +293,3 @@ button{
 
 
 
-
-
-
-footer {
-    font-family: 'Fraunces';
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px dashed rgb(11, 24, 58);
-}
-
-
-
-/* mobile styles */
-@media only screen and (min-width: 0) and (max-width: 40em) {
-    html{
-        font-size: 12px;
-    }
-
-    header {
-        padding-bottom: 0.25em;
-    }
-
-    nav ul {
-        padding-left: 1em;
-    }
-
-    header h1 {
-        padding-top: 0.5em;
-    }
-
-}
-
-/* desktop styles */
-@media only screen and (min-width: 40.001em) {
-
-    html{
-        font-size: 16px;
-    }
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    main {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    main section {
-        /*flex-basis: 70%;*/
-        padding-right: 0.5em;
-    }
-
-    main aside {
-        flex-basis: 30%;
-        padding-left: 0.5em;
-    }
-}
