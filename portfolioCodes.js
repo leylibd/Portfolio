@@ -16,4 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add("activeSection");
         });
     });
+
+    
 });
+
+
+function openResume() {
+      window.open("file:///C:/Users/Leyli/Desktop/HCI%2022-24/2nd%20Semester/FH_Web%20development/codes/PortfolioWeb/LeyliBunyadzade-cv.pdf", "_blank");
+};
+
+function openCubes() {
+      window.open("file:///C:/Users/Leyli/Desktop/HCI%2022-24/2nd%20Semester/FH_Web%20development/codes/PortfolioWeb/interactiveCubes.html", "_blank");
+};

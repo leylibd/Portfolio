@@ -21,16 +21,20 @@
           <li><a href="#hello-section"> hello </a></li>
           <li><a href="#projects-section"> projects </a></li>
           <li><a href="#skills-container"> skills </a></li>
+          <li><a href="#about-me-section"> about me </a></li>
+          <li><a href="#art-section"> other art </a></li>
           <li><a href="#contact"> contact </a></li>
         </ul>
         <div class="icons">
           <a
             class="icon instagram"
             href="https://www.instagram.com/leyli.jpeg/"
+            target="_blank"
           ></a>
           <a
             class="icon linkedin"
             href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+            target="_blank"
           ></a>
         </div>
       </nav>
@@ -47,7 +51,9 @@
               interactions and experience prototyping :)
             </p>
           </article>
-          <button id="resume-button" class="main-font">my resume</button>
+          <button onclick="openResume()" id="resume-button" class="main-font">
+            my resume
+          </button>
         </div>
         <aside>
           <img src="leyli.svg" alt="leyli illustration" />
@@ -60,7 +66,7 @@
           <div id="ux-design-section">
             <h2 class="main-font">Interaction & UX design</h2>
             <div class="cards-row">
-              <div class="design-card-big">
+              <div class="design-card-big" onclick="openCubes()">
                 <h3 class="card-header">Interactive cubes</h3>
                 <img src="cubes.png" alt="cubes cover" />
                 <p class="sec-font card-tags">research, interaction design</p>
