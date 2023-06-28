@@ -1,271 +1,307 @@
 html {
-    background-color: #293544;
-    color: #EAEAEA;
-    scroll-behavior: smooth;
+  background-color: #293544;
+  color: #eaeaea;
+  scroll-behavior: smooth;
 }
 
 h1 {
-    font-family: 'Fraunces';
-    font-weight: 400;
-    font-size: 2.5em;
-    line-height: 2.5em;
+  font-family: "Fraunces";
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 2.5em;
 }
 
 h2 {
-    font-family: 'Fraunces';
-    font-weight: 400;
-    font-size: 1.75em;
-    line-height: 2em;
+  font-family: "Fraunces";
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 2em;
 }
 
 h3 {
-    font-family: 'Fraunces';
-    font-weight: 400;
-    font-family: "DM Sans";
-    font-size: 1.5em;
-    line-height: 1.5em;
+  font-weight: 400;
+  font-family: "DM Sans";
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+h6 {
+  font-family: "Fraunces";
 }
 
 p {
-    font-family: "DM Sans";
-    font-size: 1em;
-    line-height: 1.5em;
+  font-family: "DM Sans";
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-ul{
-    font-family: "DM Sans";
-    line-height: 1.5em;
+ul {
+  font-family: "DM Sans";
+  line-height: 1.5em;
 }
 
 img {
-    border-radius: 0.5em;
+  border-radius: 0.5em;
 }
 
-.bullet-points{
-    list-style-type: circle;
-    padding-left: 3em;
+.hidden {
+  display: none !important;
 }
 
-table{
-    font-family: "DM Sans";
-    font-size: 1em;
-    line-height: 1.5em;
+.bullet-points {
+  list-style-type: circle;
+  padding-left: 3em;
+}
+
+table {
+  font-family: "DM Sans";
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .main-font {
-    font-family: "Fraunces";
+  font-family: "Fraunces";
 }
 
 .sec-font {
-    font-family: "DM Sans";
+  font-family: "DM Sans";
 }
 
 a {
-    color: #EAEAEA;
-    text-decoration: none;
+  color: #eaeaea;
+  text-decoration: none;
 }
-
-
 
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    background-color: #293544;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #293544;
 }
 
+#desktop-nav {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-right: 56px;
+  margin-top: 24px;
+  margin-left: 56px;
 
-header nav {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-right: 56px;
-    margin-top: 24px;
-    margin-left: 56px;
-
-    width: inherit;
-    height: inherit;
-    left: 56px;
-    top: 0px;
-    right: 56px;
-
+  width: inherit;
+  height: inherit;
+  left: 56px;
+  top: 0px;
+  right: 56px;
 }
 
-header nav h6 {
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-
-    width: 152px;
-
-
-    border-radius: 5px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+#desktop-nav h6 {
+  font-size: 1.5em;
 }
 
+#desktop-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 415px;
 
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 55px;
-    width: 415px;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-header nav li {
-    list-style-type: none;
-    margin-right: 1em;
+#desktop-nav li {
+  list-style-type: none;
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 
-    width: 95px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    /* Inside auto layout */
+  /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 
+#mobile-nav {
+  display: none;
 }
 
 .icons {
-    display: flex;
-    order: 2;
-    gap: 2rem;
+  display: flex;
+  order: 2;
+  gap: 2rem;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav a.activeSection {
-    text-decoration: underline;
-    font-weight: 600;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
-
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-repeat: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: none;
 }
 
 .icon:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .icon.instagram {
-    background-image: url(icons/ig.svg);
-    background-repeat: none;
-    background-size: contain;
+  background-image: url(icons/ig.svg);
+  background-repeat: none;
+  background-size: contain;
 }
 
 .icon.linkedin {
-    background-image: url(icons/linkedin.svg);
-    background-repeat: none;
-    background-size: contain;
+  background-image: url(icons/linkedin.svg);
+  background-repeat: none;
+  background-size: contain;
 }
-
-
 
 footer {
-    font-family: 'Fraunces';
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px dashed rgb(11, 24, 58);
+  margin-top: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  font-family: "Fraunces";
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #222222;
 }
-
+footer p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 /* mobile styles */
 @media only screen and (min-width: 0) and (max-width: 50em) {
-    html {
-        font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 
-    main{
-        padding-left: 4em;
-        padding-right: 4em;
-    }
+  main {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
 
-    header {
-        padding-bottom: 0.25em;
-    }
+  header {
+    padding-bottom: 0.25em;
+  }
 
-    nav ul {
-        padding-left: 1em;
-    }
+  #desktop-nav {
+    display: none;
+  }
 
-    header h1 {
-        padding-top: 0.5em;
-    }
+  #mobile-nav {
+    padding-top: 2em;
+    padding-left: 2em;
+    display: flex;
+    position: relative;
+    width: auto;
+    justify-content: space-between;
+    height: 8vh;
+    align-content: center;
+  }
+
+  #mobile-nav ul {
+    display: flex;
+    gap: 10px;
+    flex-flow: column wrap;
+    align-content: flex-end;
+  }
+
+  #mobile-nav li {
+    list-style-type: none;
+    margin-right: 1em;
+    float: right;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: right;
+  }
+
+  #mobile-nav h6 {
+    font-size: 1.5em;
+  }
+
+  section {
+    margin: 0;
+  }
 }
 
 /* desktop styles */
 @media only screen and (min-width: 50.001em) {
+  html {
+    font-size: 16px;
+  }
 
-    html {
-        font-size: 16px;
-    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 12em;
+    padding-right: 12em;
+  }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-left: 12em;
-        padding-right: 12em;
-    }
+  main section {
+    /*flex-basis: 70%;*/
+    padding-right: 0.5em;
+  }
 
-    main section {
-        /*flex-basis: 70%;*/
-        padding-right: 0.5em;
-    }
+  main aside {
+    flex-basis: 30%;
+    padding-left: 0.5em;
+  }
 
-    main aside {
-        flex-basis: 30%;
-        padding-left: 0.5em;
-    }
+  .text-with-image {
+    display: flex;
+    align-items: flex-start;
+  }
 
-    .text-with-image {
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .image-container {
-        text-align: left;
-        width: 50em;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-    }
+  .image-container {
+    text-align: left;
+    width: 50em;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.6em;
+}
+
+::-webkit-scrollbar-track {
+  background: #28313e;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 2em;
 }

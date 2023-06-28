@@ -1,295 +1,255 @@
-button{
-    color: #EAEAEA;
+button {
+  color: #eaeaea;
 }
-
 
 .card-header {
-    color: #293544;
-    font-weight: 600;
-    order: 0;
+  color: #293544;
+  font-weight: 600;
+  order: 0;
 }
 
-.card-tags{
-    font-family: "DM Sans";
-    color: #293544;
-    order: 2;
+.card-tags {
+  font-family: "DM Sans";
+  color: #293544;
+  order: 2;
 }
 
+#hello-section {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 191px;
+  isolation: isolate;
 
-
-
-#hello-section{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 191px;
-    isolation: isolate;
-
-    width: 557px;
-    height: 209px;
-    left: 92px;
-    margin-top: 12em;
+  width: 557px;
+  height: 209px;
+  left: 92px;
+  padding-top: 8em;
 }
 
 #hello-section div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
 
-    width: 557px;
-    height: 209px;
+  width: auto;
+  height: 209px;
 
+  /* Inside auto layout */
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    z-index: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
 }
 
 #hello-section article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
 
-    width: 557px;
-    height: 126px;
+  width: 557px;
+  height: 126px;
 
+  /* Inside auto layout */
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-#hello-section h3{
-    width: 30px;
-    height: 30px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+#hello-section h3 {
+  width: 30px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-#hello-section p{
-    width: 557px;
-    height: 84px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+#hello-section p {
+  width: 557px;
+  height: 84px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 #hello-section img {
-    /*position: absolute;*/
-    width: 477.5px;
-    height: 507.5px;
-    left: 748px;
-    top: 0px;
-    margin-top: -3rem;
+  /*position: absolute;*/
+  width: 477.5px;
+  height: 507.5px;
+  left: 748px;
+  top: 0px;
+  margin-top: -3rem;
 
+  /* Inside auto layout */
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    z-index: 1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
 }
 
-#resume-button{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 14px;
-    gap: 10px;
-
-    width: 137px;
-    height: 48px;
-
-    /* leyli/black */
-
-    border: 3px solid #222222;
-    border-radius: 4px;
-    background-color: #293544;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+#resume-button {
+  outline: white;
+  outline-style: solid;
+  padding: 10px;
 }
 
-
-#projects-section{ 
-
-    margin-top: 30em;
-
-}
-
-#projects-section h1{
-    width: 158px;
-    height: 52px;
-    margin-bottom: 52px;
-
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    /* identical to box height */
-
-
-    /* leyli/white */
-
-    color: #EAEAEA;
-
-}
-
-
-#projects-container h2{
-    margin-bottom: 32px;
-}
-
-#ux-design-section{
-    width: 1280px;
-    height: 387px;
-}
-
-#ux-design h2{
-    width: 359px;
-    height: 39px;
-
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-
-    /* leyli/white */
-
-    color: #EAEAEA;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+#projects-section {
+  padding-top: 4em;
 }
 
 .cards-row {
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding: 2em;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 2em;
 }
 
-.design-card{
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-grow: 0;
-    align-items: flex-start;
-    gap: 0.6rem;
-    flex-basis: 18rem;
-    height: 22rem;
-    background: #EAEAEA;
-    border: 4px solid #222222;
-    border-radius: 10px;
-    padding: 16px;
-    box-shadow: -18px 16px 0px 0px #222222;
-    margin-right: 4rem;
+.design-card {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: flex-start;
+  gap: 0.6rem;
+  /* flex-basis: 18rem; */
+  background: #eaeaea;
+  border: 0.3em solid #222222;
+  border-radius: 0.5em;
+  padding: 1em;
+  box-shadow: -1em 1em 0px 0px #222222;
+  margin-right: 4em;
+  height: 16em;
+  width: 16em;
 }
 
 .design-card-big {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-grow: 0;
-    align-items: flex-start;
-    gap: 0.4rem;
-    /*flex-basis: 10rem;*/
-    height: 16em;
-    width: 24em;
-    background: #EAEAEA;
-    border: 4px solid #222222;
-    border-radius: 10px;
-    padding: 16px;
-    box-shadow: -18px 16px 0px 0px #222222;
-    margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: flex-start;
+  gap: 0.4rem;
+  /*flex-basis: 10rem;*/
+  /* max-width: 24em; */
+  background: #eaeaea;
+  border: 0.3em solid #222222;
+  border-radius: 0.5em;
+  padding: 1em;
+  box-shadow: -1em 1em 0px 0px #222222;
+  margin-right: 4em;
+  height: 18em;
+  width: 30em;
 }
 
-.design-card img{
-    width: 100%;
-    height: 17rem;
-    border-radius: 5px;
-    order: 1;
-    object-fit: cover;
-    margin-bottom: 10px;
-    margin-top: 5px;
+.design-card img {
+  width: 100%;
+  height: 12em;
+  border-radius: 5px;
+  order: 1;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .design-card-big img {
-    width: 24em;
-    height: 12em;
-    border-radius: 5px;
-    order: 1;
-    object-fit: cover;
-    margin-bottom: 10px;
-    margin-top: 5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 12em;
+  order: 1;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
-#skills-container{
-    top: 1200px;
-    margin-left: 56px;
+#skills-container {
+  padding-top: 4em;
 }
 
-#skills-container h1{
-    margin-bottom: 52px;
+.skill-section {
+  margin-bottom: 4em;
+  margin-left: 2em;
 }
 
-.skill-section{
-    margin-bottom: 52px;;
+.skill-section h2 {
+  margin-bottom: 0.5em;
 }
 
-.skill-section h2{
-    margin-bottom: 24px;
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 16px;
 }
 
-.skills-tags{
+.skill {
+  font-family: "DM Sans";
+  padding: 10px;
+  /* leyli/green */
+  background: #2c4936;
+  /* leyli/black */
+  border: 2px solid #222222;
+  border-radius: 10px;
+  position: relative;
+}
+
+#play-section {
+  padding-top: 4em;
+}
+
+#about-me-section {
+  padding-top: 4em;
+}
+
+#about-me-section p {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* mobile styles */
+@media only screen and (min-width: 0) and (max-width: 50em) {
+  #hello-section {
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 16px;
-    column-gap: 16px;
-}
-
-
-.skill{
-    font-family: "DM Sans";
-    padding: 10px;
-    /* leyli/green */
-    background: #2C4936;
-    /* leyli/black */
-    border: 2px solid #222222;
-    border-radius: 10px;
     position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    padding-top: 4em;
+  }
+  #ux-design-section {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .cards-row {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: fit-content;
+  }
+
+  .design-card-big {
+    margin-bottom: 4em;
+    margin-right: 0rem;
+  }
 }
-
-
-

@@ -26,5 +26,5 @@ function openResume() {
 };
 
 function openCubes() {
-      window.open("file:///C:/Users/Leyli/Desktop/HCI%2022-24/2nd%20Semester/FH_Web%20development/codes/PortfolioWeb/interactiveCubes.html", "_blank");
+      window.open("file:///C:/Users/Leyli/Desktop/HCI%2022-24/2nd%20Semester/FH_Web%20development/codes/PortfolioWeb/interactiveCubes.html");
 };

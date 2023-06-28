@@ -15,23 +15,47 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h6 class="main-font"><a href="leyli">Leyli Bunyadzade</a></h6>
+      <nav id="desktop-nav">
+        <h6 class="main-font">
+          <a href="index.html">Leyli Bunyadzade</a>
+        </h6>
         <ul class="sec-font">
-          <li><a href="#hello-section"> hello </a></li>
-          <li><a href="#projects-section"> projects </a></li>
-          <li><a href="#skills-container"> skills </a></li>
-          <li><a href="#contact"> contact </a></li>
+          <li><a href="index.html#hello-section"> hello </a></li>
+          <li><a href="index.html#projects-section"> projects </a></li>
+          <li><a href="index.html#skills-container"> skills </a></li>
+          <li><a href="index.html#play-section"> play </a></li>
+          <li><a href="index.html#about-me-section"> about me </a></li>
+          <li>
+            <div class="icons">
+              <a
+                class="icon instagram"
+                href="https://www.instagram.com/leyli.jpeg/"
+                target="_blank"
+              ></a>
+              <a
+                class="icon linkedin"
+                href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                target="_blank"
+              ></a>
+            </div>
+          </li>
         </ul>
-        <div class="icons">
-          <a
-            class="icon instagram"
-            href="https://www.instagram.com/leyli.jpeg/"
-          ></a>
-          <a
-            class="icon linkedin"
-            href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
-          ></a>
+      </nav>
+      <nav id="mobile-nav">
+        <h6><a href="index.html">Leyli Bunyadzade</a></h6>
+        <div style="display: flex; flex-direction: column">
+          <button
+            onclick="document.getElementById('dropdown').classList.toggle('hidden')"
+          >
+            Dropdown
+          </button>
+          <ul class="hidden" id="dropdown">
+            <li><a href="index.html#hello-section"> hello </a></li>
+            <li><a href="index.html#projects-section"> projects </a></li>
+            <li><a href="index.html#skills-container"> skills </a></li>
+            <li><a href="index.html#play-section"> play </a></li>
+            <li><a href="index.html#about-me-section"> about me </a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -196,6 +220,18 @@
               Prototype of cubes. Screen turned off
             </p>
           </aside>
+        </section>
+        <section id="decription">
+          <h3>Description of the cubes</h3>
+          <br />
+          <p>
+            Each cube has a electrostatic sensory display on top, where the
+            images for activities will be displayed. The display will also be
+            used to explore different textures through tactile sensation. Other
+            components of the cube are speakers and microphone. The cube is
+            hollow inside.
+          </p>
+          <br />
         </section>
       </section>
     </main>

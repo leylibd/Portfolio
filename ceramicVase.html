@@ -15,17 +15,47 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h6 class="main-font"><a href="leyli">Leyli Bunyadzade</a></h6>
+      <nav id="desktop-nav">
+        <h6 class="main-font">
+          <a href="index.html">Leyli Bunyadzade</a>
+        </h6>
         <ul class="sec-font">
-          <li><a href="/"> about me </a></li>
-          <li><a href="#projects"> projects </a></li>
-          <li><a href="#skills"> skills </a></li>
-          <li><a href="#contact"> contact </a></li>
+          <li><a href="index.html#hello-section"> hello </a></li>
+          <li><a href="index.html#projects-section"> projects </a></li>
+          <li><a href="index.html#skills-container"> skills </a></li>
+          <li><a href="index.html#play-section"> play </a></li>
+          <li><a href="index.html#about-me-section"> about me </a></li>
+          <li>
+            <div class="icons">
+              <a
+                class="icon instagram"
+                href="https://www.instagram.com/leyli.jpeg/"
+                target="_blank"
+              ></a>
+              <a
+                class="icon linkedin"
+                href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                target="_blank"
+              ></a>
+            </div>
+          </li>
         </ul>
-        <div class="icons">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
+      </nav>
+      <nav id="mobile-nav">
+        <h6><a href="index.html">Leyli Bunyadzade</a></h6>
+        <div style="display: flex; flex-direction: column">
+          <button
+            onclick="document.getElementById('dropdown').classList.toggle('hidden')"
+          >
+            Dropdown
+          </button>
+          <ul class="hidden" id="dropdown">
+            <li><a href="index.html#hello-section"> hello </a></li>
+            <li><a href="index.html#projects-section"> projects </a></li>
+            <li><a href="index.html#skills-container"> skills </a></li>
+            <li><a href="index.html#play-section"> play </a></li>
+            <li><a href="index.html#about-me-section"> about me </a></li>
+          </ul>
         </div>
       </nav>
     </header>

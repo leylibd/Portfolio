@@ -15,27 +15,47 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h6 class="main-font"><a href="leyli">Leyli Bunyadzade</a></h6>
+      <nav id="desktop-nav">
+        <h6 class="main-font">
+          <a href="index.html">Leyli Bunyadzade</a>
+        </h6>
         <ul class="sec-font">
           <li><a href="#hello-section"> hello </a></li>
           <li><a href="#projects-section"> projects </a></li>
           <li><a href="#skills-container"> skills </a></li>
+          <li><a href="#play-section"> play </a></li>
           <li><a href="#about-me-section"> about me </a></li>
-          <li><a href="#art-section"> other art </a></li>
-          <li><a href="#contact"> contact </a></li>
+          <li>
+            <div class="icons">
+              <a
+                class="icon instagram"
+                href="https://www.instagram.com/leyli.jpeg/"
+                target="_blank"
+              ></a>
+              <a
+                class="icon linkedin"
+                href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                target="_blank"
+              ></a>
+            </div>
+          </li>
         </ul>
-        <div class="icons">
-          <a
-            class="icon instagram"
-            href="https://www.instagram.com/leyli.jpeg/"
-            target="_blank"
-          ></a>
-          <a
-            class="icon linkedin"
-            href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
-            target="_blank"
-          ></a>
+      </nav>
+      <nav id="mobile-nav">
+        <h6><a href="index.html">Leyli Bunyadzade</a></h6>
+        <div style="display: flex; flex-direction: column">
+          <button
+            onclick="document.getElementById('dropdown').classList.toggle('hidden')"
+          >
+            Dropdown
+          </button>
+          <ul class="hidden" id="dropdown">
+            <li><a href="#hello-section"> hello </a></li>
+            <li><a href="#projects-section"> projects </a></li>
+            <li><a href="#skills-container"> skills </a></li>
+            <li><a href="#play-section"> play </a></li>
+            <li><a href="#about-me-section"> about me </a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -51,9 +71,9 @@
               interactions and experience prototyping :)
             </p>
           </article>
-          <button onclick="openResume()" id="resume-button" class="main-font">
+          <a href="LeyliBunyadzade-cv.pdf" id="resume-button" class="main-font">
             my resume
-          </button>
+          </a>
         </div>
         <aside>
           <img src="leyli.svg" alt="leyli illustration" />
@@ -66,47 +86,33 @@
           <div id="ux-design-section">
             <h2 class="main-font">Interaction & UX design</h2>
             <div class="cards-row">
-              <div class="design-card-big" onclick="openCubes()">
+              <a class="design-card-big" href="interactiveCubes.html">
                 <h3 class="card-header">Interactive cubes</h3>
                 <img src="cubes.png" alt="cubes cover" />
                 <p class="sec-font card-tags">research, interaction design</p>
-              </div>
+              </a>
 
-              <div class="design-card-big">
+              <a class="design-card-big" href="">
                 <h3 class="card-header">Needy Microwave</h3>
                 <img src="microwave .png" alt="cubes cover" />
                 <p class="sec-font card-tags">
-                  interaction design, prototyping
+                  WIP, interaction design, prototyping
                 </p>
-              </div>
+              </a>
 
-              <div class="design-card-big">
+              <a class="design-card-big">
                 <h3 class="card-header">AI and Creativity</h3>
                 <img src="microwave .png" alt="cubes cover" />
                 <p class="sec-font card-tags">
-                  wip, research, conference paper
+                  WIP, research, conference paper
                 </p>
-              </div>
+              </a>
 
-              <div class="design-card-big">
-                <h3 class="card-header">Amazing Finds Jar</h3>
+              <a class="design-card-big">
+                <h3 class="card-header">Curious Finds</h3>
                 <img src="microwave .png" alt="cubes cover" />
-                <p class="sec-font card-tags">wip, research, prototype</p>
-              </div>
-
-              <div class="design-card-big">
-                <h3 class="card-header">Needy Microwave</h3>
-                <img src="microwave .png" alt="cubes cover" />
-                <p class="sec-font card-tags">
-                  interaction design, prototyping
-                </p>
-              </div>
-
-              <div class="design-card-big">
-                <h3 class="card-header">Needy Microwave</h3>
-                <img src="cubes.png" alt="cubes cover" />
-                <p class="card-tags">research, interaction design</p>
-              </div>
+                <p class="sec-font card-tags">WIP, research, prototype</p>
+              </a>
             </div>
           </div>
         </section>
@@ -168,7 +174,38 @@
           </ul>
         </section>
       </section>
-      <section class="about-me">
+
+      <section id="play-section">
+        <h1>Play</h1>
+        <section id="play-container">
+          <div id="ceramics-section">
+            <h2>Ceramics</h2>
+            <div class="cards-row">
+              <a class="design-card" href="ceramicVase.html">
+                <h3 class="card-header">Vase N1</h3>
+                <img src="cubes.png" alt="cubes cover" />
+              </a>
+
+              <a class="design-card" href="ceramicVase.html">
+                <h3 class="card-header">Forest mug</h3>
+                <img src="cubes.png" alt="cubes cover" />
+              </a>
+
+              <a class="design-card" href="ceramicVase.html">
+                <h3 class="card-header">Palette</h3>
+                <img src="cubes.png" alt="cubes cover" />
+              </a>
+
+              <a class="design-card" href="ceramicVase.html">
+                <h3 class="card-header">Mug N1</h3>
+                <img src="cubes.png" alt="cubes cover" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="about-me-section">
         <h1>about me</h1>
         <p>
           Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt
