@@ -26,7 +26,7 @@
 #images {
   position: relative;
   max-width: 100%;
-  margin-bottom: 20em;
+  margin-bottom: 30em;
   height: 100vh;
 }
 
@@ -57,13 +57,13 @@
   height: 15em;
   overflow: hidden;
   right: 0em;
-  top: 25em;
+  top: 35em;
 }
 
 #video-container {
   position: absolute;
   left: 0em;
-  top: 35em;
+  top: 45em;
   overflow: hidden;
 }
 
@@ -164,20 +164,24 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 4em;
     align-items: center;
     max-width: 100%;
     margin-bottom: 20em;
     height: 100vh;
   }
 
-  [id^="img"] {
+  #img1,
+  #img2,
+  #img3,
+  #img4,
+  #img5 {
     position: static !important;
     right: auto;
     top: auto;
     left: auto;
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
   }
 
   [id^="video"] {
@@ -185,8 +189,13 @@ footer {
     right: auto;
     top: auto;
     left: auto;
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  [id^="img-video"] {
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 @media only screen and (min-width: 50.001em) and (max-width: 70em) {
