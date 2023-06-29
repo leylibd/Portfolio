@@ -2,30 +2,31 @@ button {
   color: #eaeaea;
 }
 
-.card-header {
-  color: #293544;
-  font-weight: 600;
-  order: 0;
-}
-
-.card-tags {
-  font-family: "DM Sans";
-  color: #293544;
-  order: 2;
-}
-
 #hello-section {
   display: flex;
   position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 191px;
+  isolation: isolate;
+
+  width: 557px;
+  height: 209px;
+  left: 92px;
+  padding-top: 8em;
+}
+
+#hello-section div {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0;
   margin: 0;
   gap: 20px;
 
-  width: 100%;
-  padding-top: 10em;
-}
+  width: auto;
+  height: 209px;
 
 #background {
   display: block;
@@ -41,21 +42,56 @@ button {
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
+
+  width: 557px;
+  height: 126px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 #hello-section h3 {
+  width: 30px;
+  height: 30px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 #hello-section p {
+  width: 557px;
+  height: 84px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  max-width: 500px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#hello-section img {
+  /*position: absolute;*/
+  width: 477.5px;
+  height: 507.5px;
+  left: 748px;
+  top: 0px;
+  margin-top: -3rem;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
 }
 
 #resume-button {
@@ -134,6 +170,18 @@ button {
   margin-top: 0.5em;
 }
 
+.card-header {
+  color: #293544;
+  font-weight: 600;
+  order: 0;
+}
+
+.card-tags {
+  font-family: "DM Sans";
+  color: #293544;
+  order: 2;
+}
+
 #skills-container {
   padding-top: 4em;
 }
@@ -204,16 +252,6 @@ button {
   }
 
   .design-card-big {
-    margin-bottom: 4em;
-    margin-right: 0;
-    width: 25em;
-  }
-
-  .design-card-big img {
-    width: 100%;
-  }
-
-  .design-card {
     margin-bottom: 4em;
     margin-right: 0rem;
   }
