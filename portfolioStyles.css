@@ -28,239 +28,240 @@ button {
   width: auto;
   height: 209px;
 
-#background {
-  display: block;
-  position: absolute;
+  #background {
+    display: block;
+    position: absolute;
 
-  right: 0;
-  top: 100px;
-}
+    right: 0;
+    top: 100px;
+  }
 
-#hello-section article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
-  width: 557px;
-  height: 126px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#hello-section h3 {
-  width: 30px;
-  height: 30px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#hello-section p {
-  width: 557px;
-  height: 84px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-#hello-section img {
-  /*position: absolute;*/
-  width: 477.5px;
-  height: 507.5px;
-  left: 748px;
-  top: 0px;
-  margin-top: -3rem;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  z-index: 1;
-}
-
-#resume-button {
-  outline: white;
-  outline-style: solid;
-  padding: 10px;
-  width: fit-content;
-}
-
-#projects-section {
-  padding-top: 4em;
-}
-
-.cards-row {
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding: 2em;
-  width: 100%;
-}
-
-.design-card {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-grow: 0;
-  align-items: flex-start;
-  gap: 0.6rem;
-  /* flex-basis: 18rem; */
-  background: #eaeaea;
-  border: 0.3em solid #222222;
-  border-radius: 0.5em;
-  padding: 1em;
-  box-shadow: -1em 1em 0px 0px #222222;
-  margin-right: 4em;
-  height: 16em;
-  width: 16em;
-}
-
-.design-card-big {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-grow: 0;
-  align-items: flex-start;
-  gap: 0.4rem;
-  /*flex-basis: 10rem;*/
-  /* max-width: 24em; */
-  background: #eaeaea;
-  border: 0.3em solid #222222;
-  border-radius: 0.5em;
-  padding: 1em;
-  box-shadow: -1em 1em 0px 0px #222222;
-  margin-right: 4em;
-  height: 18em;
-  width: 30em;
-}
-
-.design-card img {
-  width: 100%;
-  height: 12em;
-  border-radius: 5px;
-  order: 1;
-  object-fit: cover;
-  margin-bottom: 10px;
-  margin-top: 5px;
-}
-
-.design-card-big img {
-  width: 100%;
-  border-radius: 5px;
-  height: 12em;
-  order: 1;
-  object-fit: cover;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-}
-
-.card-header {
-  color: #293544;
-  font-weight: 600;
-  order: 0;
-}
-
-.card-tags {
-  font-family: "DM Sans";
-  color: #293544;
-  order: 2;
-}
-
-#skills-container {
-  padding-top: 4em;
-}
-
-.skill-section {
-  margin-bottom: 4em;
-  margin-left: 2em;
-}
-
-.skill-section h2 {
-  margin-bottom: 0.5em;
-}
-
-.skills-tags {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 16px;
-  column-gap: 16px;
-}
-
-.skill {
-  font-family: "DM Sans";
-  padding: 10px;
-  /* leyli/green */
-  background: #2c4936;
-  /* leyli/black */
-  border: 2px solid #222222;
-  border-radius: 10px;
-  position: relative;
-}
-
-#play-section {
-  padding-top: 4em;
-}
-
-#about-me-section {
-  padding-top: 4em;
-}
-
-#about-me-section p {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-/* mobile styles */
-@media only screen and (min-width: 0) and (max-width: 50em) {
-  #hello-section {
+  #hello-section article {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    width: 100%;
-    padding-top: 10em;
+    gap: 12px;
+
+    width: 557px;
+    height: 126px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
-  #ux-design-section {
-    display: flex;
-    flex-direction: column;
+
+  #hello-section h3 {
+    width: 30px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  #hello-section p {
+    width: 557px;
+    height: 84px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #hello-section img {
+    /*position: absolute;*/
+    width: 477.5px;
+    height: 507.5px;
+    left: 748px;
+    top: 0px;
+    margin-top: -3rem;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+  }
+
+  #resume-button {
+    outline: white;
+    outline-style: solid;
+    padding: 10px;
     width: fit-content;
   }
 
+  #projects-section {
+    padding-top: 4em;
+  }
+
   .cards-row {
-    flex-direction: column;
-    overflow-x: hidden;
+    display: flex;
+    overflow-x: scroll;
     overflow-y: hidden;
+    padding: 2em;
     width: 100%;
-    padding: 0%;
+  }
+
+  .design-card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: flex-start;
+    gap: 0.6rem;
+    /* flex-basis: 18rem; */
+    background: #eaeaea;
+    border: 0.3em solid #222222;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: -1em 1em 0px 0px #222222;
+    margin-right: 4em;
+    height: 16em;
+    width: 16em;
   }
 
   .design-card-big {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: flex-start;
+    gap: 0.4rem;
+    /*flex-basis: 10rem;*/
+    /* max-width: 24em; */
+    background: #eaeaea;
+    border: 0.3em solid #222222;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: -1em 1em 0px 0px #222222;
+    margin-right: 4em;
+    height: 18em;
+    width: 30em;
+  }
+
+  .design-card img {
+    width: 100%;
+    height: 12em;
+    border-radius: 5px;
+    order: 1;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .design-card-big img {
+    width: 100%;
+    border-radius: 5px;
+    height: 12em;
+    order: 1;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  .card-header {
+    color: #293544;
+    font-weight: 600;
+    order: 0;
+  }
+
+  .card-tags {
+    font-family: "DM Sans";
+    color: #293544;
+    order: 2;
+  }
+
+  #skills-container {
+    padding-top: 4em;
+  }
+
+  .skill-section {
     margin-bottom: 4em;
-    margin-right: 0rem;
+    margin-left: 2em;
   }
 
-  #hello-section {
-    margin-top: 100px;
+  .skill-section h2 {
+    margin-bottom: 0.5em;
   }
 
-  #background {
-    height: 200px;
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+
+  .skill {
+    font-family: "DM Sans";
+    padding: 10px;
+    /* leyli/green */
+    background: #2c4936;
+    /* leyli/black */
+    border: 2px solid #222222;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  #play-section {
+    padding-top: 4em;
+  }
+
+  #about-me-section {
+    padding-top: 4em;
+  }
+
+  #about-me-section p {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  /* mobile styles */
+  @media only screen and (min-width: 0) and (max-width: 50em) {
+    #hello-section {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      width: 100%;
+      padding-top: 10em;
+    }
+    #ux-design-section {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+    }
+
+    .cards-row {
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: 100%;
+      padding: 0%;
+    }
+
+    .design-card-big {
+      margin-bottom: 4em;
+      margin-right: 0rem;
+    }
+
+    #hello-section {
+      margin-top: 100px;
+    }
+
+    #background {
+      height: 200px;
+    }
   }
 }
