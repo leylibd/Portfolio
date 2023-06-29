@@ -110,7 +110,7 @@ button {
   padding: 1em;
   box-shadow: -1em 1em 0px 0px #222222;
   margin-right: 4em;
-  height: 18em;
+  height: 17.5em;
   width: 30em;
 }
 
@@ -196,7 +196,8 @@ button {
   }
 
   .cards-row {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
@@ -206,7 +207,10 @@ button {
   .design-card-big {
     margin-bottom: 4em;
     margin-right: 0;
-    width: 25em;
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 4em;
+    flex-shrink: inherit;
   }
 
   .design-card-big img {
@@ -216,6 +220,7 @@ button {
   .design-card {
     margin-bottom: 4em;
     margin-right: 0rem;
+    margin-left: 2.5em;
   }
 
   #hello-section {
