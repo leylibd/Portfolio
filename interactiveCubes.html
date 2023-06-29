@@ -20,11 +20,11 @@
           <a href="index.html">Leyli Bunyadzade</a>
         </h6>
         <ul class="sec-font">
-          <li><a href="index.html#hello-section"> hello </a></li>
-          <li><a href="index.html#projects-section"> projects </a></li>
-          <li><a href="index.html#skills-container"> skills </a></li>
-          <li><a href="index.html#play-section"> play </a></li>
-          <li><a href="index.html#about-me-section"> about me </a></li>
+          <li><a href="#hello-section"> hello </a></li>
+          <li><a href="#projects-section"> projects </a></li>
+          <li><a href="#skills-container"> skills </a></li>
+          <li><a href="#about-me-section"> about me </a></li>
+          <li><a href="#play-section"> play </a></li>
           <li>
             <div class="icons">
               <a
@@ -43,18 +43,34 @@
       </nav>
       <nav id="mobile-nav">
         <h6><a href="index.html">Leyli Bunyadzade</a></h6>
-        <div style="display: flex; flex-direction: column">
-          <button
-            onclick="document.getElementById('dropdown').classList.toggle('hidden')"
-          >
-            Dropdown
+        <div id="dropdown-container">
+          <button onclick="dropdownToggle()">
+            <img
+              id="dropdown-icon"
+              src="icons/menuClosed.svg"
+              alt="menu open button"
+            />
           </button>
           <ul class="hidden" id="dropdown">
-            <li><a href="index.html#hello-section"> hello </a></li>
-            <li><a href="index.html#projects-section"> projects </a></li>
-            <li><a href="index.html#skills-container"> skills </a></li>
-            <li><a href="index.html#play-section"> play </a></li>
-            <li><a href="index.html#about-me-section"> about me </a></li>
+            <li><a href="#hello-section"> hello </a></li>
+            <li><a href="#projects-section"> projects </a></li>
+            <li><a href="#skills-container"> skills </a></li>
+            <li><a href="#about-me-section"> about me </a></li>
+            <li><a href="#play-section"> play </a></li>
+            <li>
+              <div class="icons">
+                <a
+                  class="icon instagram"
+                  href="https://www.instagram.com/leyli.jpeg/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon linkedin"
+                  href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                  target="_blank"
+                ></a>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -238,4 +254,5 @@
   <footer>
     <p>&copy; L.Bunyadzade</p>
   </footer>
+  <script src="portfolioCodes.js"></script>
 </html>

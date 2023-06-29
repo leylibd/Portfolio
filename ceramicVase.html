@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>vase №1</title>
     <link href="reset.css" rel="stylesheet" />
-    <link href="vaseStyles.css" rel="stylesheet" />
     <link href="generalStyles.css" rel="stylesheet" />
+    <link href="vaseStyles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,8 +23,8 @@
           <li><a href="index.html#hello-section"> hello </a></li>
           <li><a href="index.html#projects-section"> projects </a></li>
           <li><a href="index.html#skills-container"> skills </a></li>
-          <li><a href="index.html#play-section"> play </a></li>
           <li><a href="index.html#about-me-section"> about me </a></li>
+          <li><a href="index.html#play-section"> play </a></li>
           <li>
             <div class="icons">
               <a
@@ -43,24 +43,40 @@
       </nav>
       <nav id="mobile-nav">
         <h6><a href="index.html">Leyli Bunyadzade</a></h6>
-        <div style="display: flex; flex-direction: column">
-          <button
-            onclick="document.getElementById('dropdown').classList.toggle('hidden')"
-          >
-            Dropdown
+        <div id="dropdown-container">
+          <button onclick="dropdownToggle()">
+            <img
+              id="dropdown-icon"
+              src="icons/menuClosed.svg"
+              alt="menu open button"
+            />
           </button>
           <ul class="hidden" id="dropdown">
             <li><a href="index.html#hello-section"> hello </a></li>
             <li><a href="index.html#projects-section"> projects </a></li>
             <li><a href="index.html#skills-container"> skills </a></li>
-            <li><a href="index.html#play-section"> play </a></li>
             <li><a href="index.html#about-me-section"> about me </a></li>
+            <li><a href="index.html#play-section"> play </a></li>
+            <li>
+              <div class="icons">
+                <a
+                  class="icon instagram"
+                  href="https://www.instagram.com/leyli.jpeg/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon linkedin"
+                  href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                  target="_blank"
+                ></a>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="about">
+      <section class="overview">
         <h1>Vase №1</h1>
         <ul class="info">
           <li>Date: 4/10/2021</li>
@@ -69,18 +85,46 @@
       </section>
       <section id="process">
         <h2>Process</h2>
-        <p>some text will go here</p>
-        <img id="img1" src="vase.png" alt="beige vase with green leaves" />
-        <img id="img2" src="vase.png" alt="beige vase with green leaves" />
-        <div id="video-container">
-          <video
-            id="img-video"
-            src="vaseRaw.mp4"
-            type="video/mp4"
-            autoplay
-            muted
-            loop
-          ></video>
+        <p>
+          This is the first vase i created and overall my second (successful)
+          work. I used strips-layering technique for that, and making strip
+          shorter as i was approaching the narrow parts of the vase. After it
+          slightly dried, i cut the leaves on it and painted it with green
+          engobe. After it was biscuit-fried, i applied transparent glaze
+          outside, and brown glaze inside.
+        </p>
+        <div id="images">
+          <img id="img1" src="vase.png" alt="beige vase with green leaves" />
+          <img id="img2" src="vase.png" alt="beige vase with green leaves" />
+          <img id="img3" src="vase.png" alt="beige vase with green leaves" />
+          <div id="video-container">
+            <video
+              id="img-video"
+              src="vaseRaw.mp4"
+              type="video/mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <section id="final">
+        <h2>Final work</h2>
+        <div id="images">
+          <img id="img4" src="vase.png" alt="beige vase with green leaves" />
+          <img id="img5" src="vase.png" alt="beige vase with green leaves" />
+          <div id="video-container2">
+            <video
+              id="img-video2"
+              src="vaseRaw.mp4"
+              type="video/mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
         </div>
       </section>
     </main>
@@ -88,5 +132,6 @@
       <p>&copy; L.Bunyadzade</p>
     </footer>
     <script src="vaseVideo.js"></script>
+    <script src="portfolioCodes.js"></script>
   </body>
 </html>

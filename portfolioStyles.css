@@ -1,5 +1,10 @@
-button {
-  color: #eaeaea;
+#resume-button {
+  border: 0.25em solid #222222;
+  border-radius: 0.45em;
+  background-color: #eaeaea;
+  color: #293544;
+  padding: 10px;
+  width: fit-content;
 }
 
 .card-header {
@@ -58,15 +63,8 @@ button {
   max-width: 500px;
 }
 
-#resume-button {
-  outline: white;
-  outline-style: solid;
-  padding: 10px;
-  width: fit-content;
-}
-
 #projects-section {
-  padding-top: 4em;
+  padding-top: 8em;
 }
 
 .cards-row {
@@ -135,7 +133,7 @@ button {
 }
 
 #skills-container {
-  padding-top: 4em;
+  padding-top: 8em;
 }
 
 .skill-section {
@@ -166,11 +164,11 @@ button {
 }
 
 #play-section {
-  padding-top: 4em;
+  padding-top: 6em;
 }
 
 #about-me-section {
-  padding-top: 4em;
+  padding-top: 6em;
 }
 
 #about-me-section p {
