@@ -43,11 +43,13 @@
       </nav>
       <nav id="mobile-nav">
         <h6><a href="index.html">Leyli Bunyadzade</a></h6>
-        <div style="display: flex; flex-direction: column">
-          <button
-            onclick="document.getElementById('dropdown').classList.toggle('hidden')"
-          >
-            Dropdown
+        <div id="dropdown-container">
+          <button onclick="dropdownToggle()">
+            <img
+              id="dropdown-icon"
+              src="icons/menuClosed.svg"
+              alt="menu open button"
+            />
           </button>
           <ul class="hidden" id="dropdown">
             <li><a href="#hello-section"> hello </a></li>
@@ -55,65 +57,69 @@
             <li><a href="#skills-container"> skills </a></li>
             <li><a href="#play-section"> play </a></li>
             <li><a href="#about-me-section"> about me </a></li>
+            <li>
+              <div class="icons">
+                <a
+                  class="icon instagram"
+                  href="https://www.instagram.com/leyli.jpeg/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon linkedin"
+                  href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                  target="_blank"
+                ></a>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
+      <img id="background" src="leyli.svg" alt="leyli illustration" />
       <section id="hello-section" class="activeSection">
-        <div>
-          <h3 class="main-font">hi!</h3>
-          <article>
-            <p class="sec-font">
-              I’m an HCI master’s student at FH Salzburg and Salzburg
-              University, with background in experience and game design.
-              Currently focusing on behavioral change through design, tangible
-              interactions and experience prototyping :)
-            </p>
-          </article>
-          <a href="LeyliBunyadzade-cv.pdf" id="resume-button" class="main-font">
-            my resume
-          </a>
-        </div>
-        <aside>
-          <img src="leyli.svg" alt="leyli illustration" />
-        </aside>
+        <h3 class="main-font">hi!</h3>
+        <p class="sec-font">
+          I’m an HCI master’s student at FH Salzburg and Salzburg University,
+          with background in experience and game design. Currently focusing on
+          behavioral change through design, tangible interactions and experience
+          prototyping :)
+        </p>
+        <a href="LeyliBunyadzade-cv.pdf" id="resume-button" class="main-font">
+          my resume
+        </a>
       </section>
 
       <section id="projects-section">
         <h1>Projects</h1>
         <section id="projects-container">
-          <div id="ux-design-section">
-            <h2 class="main-font">Interaction & UX design</h2>
-            <div class="cards-row">
-              <a class="design-card-big" href="interactiveCubes.html">
-                <h3 class="card-header">Interactive cubes</h3>
-                <img src="cubes.png" alt="cubes cover" />
-                <p class="sec-font card-tags">research, interaction design</p>
-              </a>
+          <h2 class="main-font">Interaction & UX design</h2>
+          <div class="cards-row">
+            <a class="design-card-big" href="interactiveCubes.html">
+              <h3 class="card-header">Interactive cubes</h3>
+              <img src="cubes.png" alt="cubes cover" />
+              <p class="sec-font card-tags">research, interaction design</p>
+            </a>
 
-              <a class="design-card-big" href="">
-                <h3 class="card-header">Needy Microwave</h3>
-                <img src="microwave .png" alt="cubes cover" />
-                <p class="sec-font card-tags">
-                  WIP, interaction design, prototyping
-                </p>
-              </a>
+            <a class="design-card-big" href="">
+              <h3 class="card-header">Needy Microwave</h3>
+              <img src="microwave .png" alt="cubes cover" />
+              <p class="sec-font card-tags">
+                WIP, interaction design, prototyping
+              </p>
+            </a>
 
-              <a class="design-card-big">
-                <h3 class="card-header">AI and Creativity</h3>
-                <img src="microwave .png" alt="cubes cover" />
-                <p class="sec-font card-tags">
-                  WIP, research, conference paper
-                </p>
-              </a>
+            <a class="design-card-big">
+              <h3 class="card-header">AI and Creativity</h3>
+              <img src="microwave .png" alt="cubes cover" />
+              <p class="sec-font card-tags">WIP, research, conference paper</p>
+            </a>
 
-              <a class="design-card-big">
-                <h3 class="card-header">Curious Finds</h3>
-                <img src="microwave .png" alt="cubes cover" />
-                <p class="sec-font card-tags">WIP, research, prototype</p>
-              </a>
-            </div>
+            <a class="design-card-big">
+              <h3 class="card-header">Curious Finds</h3>
+              <img src="microwave .png" alt="cubes cover" />
+              <p class="sec-font card-tags">WIP, research, prototype</p>
+            </a>
           </div>
         </section>
       </section>

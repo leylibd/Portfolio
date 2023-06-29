@@ -8,21 +8,24 @@ h1 {
   font-family: "Fraunces";
   font-weight: 400;
   font-size: 2.5em;
-  line-height: 2.5em;
+  padding-bottom: 1em;
+  line-height: 1.2em;
 }
 
 h2 {
   font-family: "Fraunces";
   font-weight: 400;
   font-size: 1.75em;
-  line-height: 2em;
+  padding-bottom: 0.5em;
+  line-height: 1.2em;
 }
 
 h3 {
   font-weight: 400;
   font-family: "DM Sans";
   font-size: 1.5em;
-  line-height: 1.5em;
+  padding-bottom: 0.2em;
+  line-height: 1.2em;
 }
 
 h6 {
@@ -141,7 +144,6 @@ header {
 
 .icons {
   display: flex;
-  order: 2;
   gap: 2rem;
 }
 
@@ -197,8 +199,8 @@ footer p {
   }
 
   main {
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   header {
@@ -210,36 +212,65 @@ footer p {
   }
 
   #mobile-nav {
-    padding-top: 2em;
     padding-left: 2em;
     display: flex;
     position: relative;
     width: auto;
     justify-content: space-between;
-    height: 8vh;
+    height: 5em;
     align-content: center;
   }
 
   #mobile-nav ul {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-flow: column wrap;
     align-content: flex-end;
+    background-color: #28313e;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
   }
 
   #mobile-nav li {
     list-style-type: none;
-    margin-right: 1em;
     float: right;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     align-items: right;
+    padding: 5px;
+    padding-right: 0px;
+  }
+
+  #mobile-nav li a {
+    float: right;
   }
 
   #mobile-nav h6 {
     font-size: 1.5em;
+    padding-top: 1.5em;
+  }
+
+  #mobile-nav button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    width: auto;
+    float: right;
+  }
+  #mobile-nav img {
+    border-radius: 0px;
+    float: right;
+  }
+  #dropdown-container {
+    padding-top: 2em;
+    padding-right: 2em;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-bottom-left-radius: 10px;
   }
 
   section {

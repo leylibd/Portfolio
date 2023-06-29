@@ -17,35 +17,22 @@ button {
 #hello-section {
   display: flex;
   position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 191px;
-  isolation: isolate;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
 
-  width: 557px;
-  height: 209px;
-  left: 92px;
-  padding-top: 8em;
+  width: 100%;
+  padding-top: 10em;
 }
 
-#hello-section div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
+#background {
+  display: block;
+  position: absolute;
 
-  width: auto;
-  height: 209px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  z-index: 0;
+  right: 0;
+  top: 100px;
 }
 
 #hello-section article {
@@ -54,62 +41,28 @@ button {
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
-
-  width: 557px;
-  height: 126px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 #hello-section h3 {
-  width: 30px;
-  height: 30px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 #hello-section p {
-  width: 557px;
-  height: 84px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-#hello-section img {
-  /*position: absolute;*/
-  width: 477.5px;
-  height: 507.5px;
-  left: 748px;
-  top: 0px;
-  margin-top: -3rem;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  z-index: 1;
+  max-width: 500px;
 }
 
 #resume-button {
   outline: white;
   outline-style: solid;
   padding: 10px;
+  width: fit-content;
 }
 
 #projects-section {
@@ -121,6 +74,7 @@ button {
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 2em;
+  width: 100%;
 }
 
 .design-card {
@@ -233,7 +187,7 @@ button {
     align-items: flex-start;
     padding: 0px;
     width: 100%;
-    padding-top: 4em;
+    padding-top: 10em;
   }
   #ux-design-section {
     display: flex;
@@ -245,11 +199,30 @@ button {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: fit-content;
+    width: 100%;
+    padding: 0%;
   }
 
   .design-card-big {
     margin-bottom: 4em;
+    margin-right: 0;
+    width: 25em;
+  }
+
+  .design-card-big img {
+    width: 100%;
+  }
+
+  .design-card {
+    margin-bottom: 4em;
     margin-right: 0rem;
+  }
+
+  #hello-section {
+    margin-top: 100px;
+  }
+
+  #background {
+    height: 200px;
   }
 }
