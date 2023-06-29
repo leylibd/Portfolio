@@ -2,18 +2,6 @@ button {
   color: #eaeaea;
 }
 
-.card-header {
-  color: #293544;
-  font-weight: 600;
-  order: 0;
-}
-
-.card-tags {
-  font-family: "DM Sans";
-  color: #293544;
-  order: 2;
-}
-
 #hello-section {
   display: flex;
   position: relative;
@@ -23,10 +11,8 @@ button {
   gap: 191px;
   isolation: isolate;
 
-  width: 557px;
-  height: 209px;
-  left: 92px;
-  padding-top: 8em;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 #hello-section div {
@@ -38,7 +24,6 @@ button {
   gap: 24px;
 
   width: auto;
-  height: 209px;
 
   /* Inside auto layout */
 
@@ -55,23 +40,8 @@ button {
   padding: 0px;
   gap: 12px;
 
-  width: 557px;
-  height: 126px;
-
   /* Inside auto layout */
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#hello-section h3 {
-  width: 30px;
-  height: 30px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -80,23 +50,15 @@ button {
 #hello-section p {
   width: 557px;
   height: 84px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  padding-bottom: 2em;
 }
 
 #hello-section img {
-  /*position: absolute;*/
-  width: 477.5px;
-  height: 507.5px;
-  left: 748px;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
   top: 0px;
-  margin-top: -3rem;
+  margin-top: 8em;
 
   /* Inside auto layout */
 
@@ -180,6 +142,18 @@ button {
   margin-top: 0.5em;
 }
 
+.card-header {
+  color: #293544;
+  font-weight: 600;
+  order: 0;
+}
+
+.card-tags {
+  font-family: "DM Sans";
+  color: #293544;
+  order: 2;
+}
+
 #skills-container {
   padding-top: 4em;
 }
@@ -233,7 +207,7 @@ button {
     align-items: flex-start;
     padding: 0px;
     width: 100%;
-    padding-top: 4em;
+    padding-top: 10em;
   }
   #ux-design-section {
     display: flex;
@@ -249,6 +223,12 @@ button {
   }
 
   .design-card-big {
+    margin-bottom: 4em;
+    margin-right: 0rem;
+    width: 25em;
+  }
+
+  .design-card {
     margin-bottom: 4em;
     margin-right: 0rem;
   }

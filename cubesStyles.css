@@ -1,66 +1,64 @@
-#literature-review{
-    padding-top: 4em;
+#literature-review {
+  padding-top: 4em;
 }
 
-main{
-    padding-top: 6em;
-    padding-bottom: 6em;
+main {
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
-.image-description{
-    font-style: italic;
-    margin-top: .5em;
-    font-weight: 200;
+.image-description {
+  font-style: italic;
+  margin-top: 0.5em;
+  font-weight: 200;
 }
-
 
 /* table styles */
-table{
-    border-collapse: collapse;
-    width: 100%;
-    border-radius: .5em;
-    overflow: hidden;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 0.5em;
+  overflow: hidden;
 }
 
-th,td {
-    border: 0.15em solid #eaeaeac6;
-    text-align: left;
-    padding: 0.75em;
+th,
+td {
+  border: 0.15em solid #eaeaeac6;
+  text-align: left;
+  padding: 0.75em;
 }
 
-th{
-    background-color: #2222228b;
-    color:#EAEAEA;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+th {
+  background-color: #2222228b;
+  color: #eaeaea;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-
-tr:hover{
-    background-color: #3b454f;    
+tr:hover {
+  background-color: #3b454f;
 }
 
-
-
-.image-container img{
-    width: 25em;
-    height:fit-content;
-    float: right;
+.image-container img {
+  width: 25em;
+  height: fit-content;
+  float: right;
 }
-@media only screen and (min-width: 0) and (max-width: 70em){
-    .text-with-image {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .image-container {
-            float: none;
-            margin-left: none;
-            padding-left: none;
-            margin-bottom: .5em;
-            display: flex;
-            flex-direction: column;
-            padding-top: 1.5em;
-            align-items: center;
-        }
+
+@media only screen and (min-width: 0) and (max-width: 70em) {
+  .text-with-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    float: none;
+    margin-left: none;
+    padding-left: none;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5em;
+    align-items: center;
+  }
 }
