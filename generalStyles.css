@@ -4,6 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#main-header {
+  font-family: "Fraunces";
+  font-weight: 400;
+  font-size: 3em !important;
+  padding-bottom: 1em;
+  line-height: 1.2em;
+}
+
 h1 {
   font-family: "Fraunces";
   font-weight: 400;
@@ -223,18 +231,18 @@ footer p {
 
   #mobile-nav ul {
     display: flex;
-    gap: 5px;
     flex-flow: column wrap;
     align-content: flex-end;
     background-color: #28313e;
     padding: 5px;
     border-bottom-left-radius: 10px;
+    padding-top: 2em;
   }
 
   #mobile-nav li {
     list-style-type: none;
     float: right;
-
+    padding-top: 2em;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -264,8 +272,8 @@ footer p {
     float: right;
   }
   #dropdown-container {
-    padding-top: 2em;
-    padding-right: 2em;
+    padding: 2em;
+    padding-bottom: 1em;
     height: fit-content;
     display: flex;
     flex-direction: column;
