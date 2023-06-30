@@ -1,5 +1,5 @@
 console.log("test hello");
-var video = document.getElementById("img-video");
+var video = document.getElementById("video");
 var videoContainer = document.getElementById("video-container");
 
 var observerOptions = {

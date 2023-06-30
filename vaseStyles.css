@@ -32,7 +32,6 @@
 
 #img1 {
   position: absolute;
-  border-radius: 50%;
   width: 25em;
   height: 25em;
   overflow: hidden;
@@ -42,7 +41,6 @@
 
 #img2 {
   position: absolute;
-  border-radius: 50%;
   width: 20em;
   height: 20em;
   overflow: hidden;
@@ -52,7 +50,6 @@
 
 #img3 {
   position: absolute;
-  border-radius: 10em;
   width: 15em;
   height: 15em;
   overflow: hidden;
@@ -61,40 +58,39 @@
 }
 
 #video-container {
-  border-radius: 50%;
+  width: 25em;
+  height: 25em;
   position: absolute;
   left: 0em;
   top: 45em;
   overflow: hidden;
+  border: 0.45em solid #0c2f2b;
 }
 
-#img-video {
-  width: 20em;
-  height: 20em;
-  border: 0.45em solid #0c2f2b;
-  border-radius: 10em;
+#video {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 #video-container2 {
+  width: 25em;
+  height: 25em;
   position: absolute;
   right: 0em;
   top: 0em;
   overflow: hidden;
+  border: 0.45em solid #0c2f2b;
 }
 
-#img-video2 {
-  border-radius: 50%;
-  width: 25em;
-  height: 25em;
-  border: 0.45em solid #0c2f2b;
-  border-radius: 20em;
+#video2 {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 #img4 {
   position: absolute;
-  border-radius: 50%;
   width: 20em;
   height: 20em;
   overflow: hidden;
@@ -104,7 +100,6 @@
 
 #img5 {
   position: absolute;
-  border-radius: 10em;
   width: 15em;
   height: 15em;
   overflow: hidden;
@@ -119,6 +114,7 @@ footer {
 
 [id^="img"] {
   transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
 }
 
 [id^="img"]:hover {
@@ -127,6 +123,23 @@ footer {
 }
 
 [id^="img"]:not(:hover) {
+  animation: bounce-down 1.2s;
+  animation-fill-mode: forwards;
+}
+
+/* video resizing */
+
+[id^="video-container"] {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+}
+
+[id^="video-container"]:hover {
+  animation: bounce-up 1.2s;
+  animation-fill-mode: forwards;
+}
+
+[id^="video-container"]:not(:hover) {
   animation: bounce-down 1.2s;
   animation-fill-mode: forwards;
 }
@@ -165,11 +178,13 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 4em;
     align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 4em;
     max-width: 100%;
-    margin-bottom: 20em;
-    height: 100vh;
+    margin-bottom: 10em;
+    height: fit-content;
   }
 
   #img1,
@@ -181,20 +196,28 @@ footer {
     right: auto;
     top: auto;
     left: auto;
-    width: auto !important;
-    height: auto !important;
+    width: auto;
+    height: auto;
+    max-width: 30em;
+    max-height: 30em;
+    margin-bottom: 2em;
   }
 
-  [id^="video"] {
-    position: static !important;
+  #video-container,
+  #video-container2 {
+    position: relative;
     right: auto;
     top: auto;
     left: auto;
-    width: auto !important;
-    height: auto !important;
+    width: auto;
+    height: auto;
+    max-width: 30em;
+    max-height: 30em;
+    margin-bottom: 2em;
   }
 
-  [id^="img-video"] {
+  #video,
+  #video2 {
     width: 100% !important;
     height: 100% !important;
   }

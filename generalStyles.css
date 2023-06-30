@@ -51,6 +51,10 @@ ul {
   line-height: 1.5em;
 }
 
+button {
+  cursor: pointer;
+}
+
 img {
   border-radius: 0.5em;
 }
@@ -286,8 +290,21 @@ footer p {
   }
 }
 
+/* tablet style */
+@media only screen and (min-width: 50.001em) and (max-width: 70em) {
+  main {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
 /* desktop styles */
-@media only screen and (min-width: 50.001em) {
+@media only screen and (min-width: 70.001em) {
   html {
     font-size: 16px;
   }

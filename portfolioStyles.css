@@ -1,4 +1,5 @@
 #resume-button {
+  cursor: pointer;
   border: 0.25em solid #222222;
   border-radius: 0.45em;
   background-color: #eaeaea;
@@ -27,7 +28,6 @@
   padding: 0;
   margin: 0;
   gap: 20px;
-
   width: 100%;
   padding-top: 10em;
 }
@@ -76,6 +76,7 @@
 }
 
 .design-card {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -94,6 +95,7 @@
 }
 
 .design-card-big {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
