@@ -92,6 +92,7 @@
   margin-right: 4em;
   height: 16em;
   width: 16em;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .design-card-big {
@@ -112,6 +113,13 @@
   margin-right: 4em;
   height: 17.5em;
   width: 30em;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.design-card:hover,
+.design-card-big:hover {
+  transform: translate(-0.2em, 0.2em);
+  box-shadow: -0.5em 0.5em 0px 0px #222222;
 }
 
 .design-card img {
