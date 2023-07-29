@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mugs</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="generalStyles.css" rel="stylesheet" />
+    <link href="ceramicsGlobal.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <h6 class="main-font">
+          <a href="index.html">Leyli Bunyadzade</a>
+        </h6>
+        <ul class="sec-font">
+          <li><a href="index.html#hello-section"> hello </a></li>
+          <li><a href="index.html#projects-section"> projects </a></li>
+          <li><a href="index.html#skills-container"> skills </a></li>
+          <li><a href="index.html#about-me-section"> about me </a></li>
+          <li><a href="index.html#play-section"> play </a></li>
+          <li>
+            <div class="icons">
+              <a
+                class="icon instagram"
+                href="https://www.instagram.com/leyli.jpeg/"
+                target="_blank"
+              ></a>
+              <a
+                class="icon linkedin"
+                href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                target="_blank"
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav id="mobile-nav">
+        <h6><a href="index.html">Leyli Bunyadzade</a></h6>
+        <div id="dropdown-container">
+          <button onclick="dropdownToggle()">
+            <img
+              id="dropdown-icon"
+              src="icons/menuClosed.svg"
+              alt="menu open button"
+            />
+          </button>
+          <ul class="hidden" id="dropdown">
+            <li><a href="index.html#hello-section"> hello </a></li>
+            <li><a href="index.html#projects-section"> projects </a></li>
+            <li><a href="index.html#skills-container"> skills </a></li>
+            <li><a href="index.html#about-me-section"> about me </a></li>
+            <li><a href="index.html#play-section"> play </a></li>
+            <li>
+              <div class="icons">
+                <a
+                  class="icon instagram"
+                  href="https://www.instagram.com/leyli.jpeg/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon linkedin"
+                  href="https://www.linkedin.com/in/leyli-bunyadzade-5673ba1a0/"
+                  target="_blank"
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="main-header">Mugs</h1>
+      <section id="w1">
+        <h2>Mug №1</h2>
+        <ul class="info">
+          <li>October 2021, handbuilt</li>
+        </ul>
+        <div class="images">
+          <img id="img1" src="ceramics/nightMug/p1.jpg" alt="mug raw" />
+          <img id="img2" src="ceramics/nightMug/p2.jpg" alt="mug raw" />
+          <img id="img3" src="ceramics/nightMug/f1.jpg" alt="mug final" />
+          <img id="img4" src="ceramics/nightMug/f2.jpg" alt="mug final" />
+          <img id="img5" src="ceramics/nightMug/f3.jpg" alt="mug final" />
+          <img id="img6" src="ceramics/nightMug/f4.jpg" alt="mug final" />
+        </div>
+      </section>
+      <section id="w2">
+        <h2>Mug №2</h2>
+        <ul class="info">
+          <li>November 2021, handbuilt</li>
+        </ul>
+        <div class="images">
+          <img id="img7" src="ceramics/forestMug/p2.png" alt="raw mug" />
+          <img id="img8" src="ceramics/forestMug/p5.png" alt="raw mug" />
+          <img id="img9" src="ceramics/forestMug/p1.png" alt="raw mug" />
+
+          <video
+            id="video"
+            src="ceramics/forestMug/forest-process.mp4"
+            type="video/mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+
+          <img id="img4" src="ceramics/forestMug/1.png" alt="final mug" />
+          <img id="img5" src="ceramics/forestMug/2.png" alt="final mug" />
+          <img id="img8" src="ceramics/forestMug/5.png" alt="final mug" />
+
+          <video
+            id="video"
+            src="ceramics/forestMug/forest-final.mp4"
+            type="video/mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+
+      <section id="w3">
+        <h2>Mug №3</h2>
+        <ul class="info">
+          <li>March 2022, handbuilt</li>
+        </ul>
+        <div class="images">
+          <img
+            id="img1"
+            src="ceramics/vase/1.jpg"
+            alt="beige vase with green leaves"
+          />
+
+          <video
+            id="video"
+            src="ceramics/vase/vaseRaw.mp4"
+            type="video/mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; L.Bunyadzade</p>
+    </footer>
+    <script src="vaseVideo.js"></script>
+    <script src="portfolioCodes.js"></script>
+  </body>
+</html>

@@ -107,11 +107,6 @@
   top: 30em;
 }
 
-footer {
-  /* margin-top: auto; */
-  /* position: relative; */
-}
-
 [id^="img"] {
   transition: transform 0.3s ease-in-out;
   border-radius: 100%;

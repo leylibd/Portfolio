@@ -67,12 +67,17 @@
   padding-top: 8em;
 }
 
+#illustrations-section {
+  padding-top: 6em;
+}
+
 .cards-row {
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 2em;
   width: 100%;
+  padding-top: 1em;
 }
 
 .design-card {
@@ -112,7 +117,7 @@
   box-shadow: -1em 1em 0px 0px #222222;
   margin-right: 4em;
   height: 17.5em;
-  width: 30em;
+  width: 26em;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 

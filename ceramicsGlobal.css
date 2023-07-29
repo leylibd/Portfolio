@@ -5,6 +5,16 @@ h3 {
   margin-top: 2em;
 }
 
+#w2 h2 {
+  padding-top: 2em;
+}
+#w3 h2 {
+  padding-top: 2em;
+}
+#w4 h2 {
+  padding-top: 2em;
+}
+
 /* #images {
   display: flex;
   flex-wrap: wrap;
