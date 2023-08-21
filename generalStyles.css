@@ -46,6 +46,14 @@ p {
   line-height: 1.5em;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.sub {
+  margin-left: 1em;
+}
+
 ul {
   font-family: "DM Sans";
   line-height: 1.5em;

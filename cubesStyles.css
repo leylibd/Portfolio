@@ -1,3 +1,8 @@
+.ref {
+  text-decoration: underline;
+  color: rgb(167, 206, 251);
+}
+
 #literature-review {
   padding-top: 4em;
 }
